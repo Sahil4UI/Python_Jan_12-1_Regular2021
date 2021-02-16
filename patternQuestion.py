@@ -95,18 +95,28 @@ for i in range(1,6):
         x+=1
     print()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+'''
+A
+BC
+DEF
+GHIJ
+KLMNO
+'''
+x = 65
+for i in range(1,6):
+    for j in range(i):
+        print(chr(x),end="")
+        x+=1
+    print()
+'''
+A
+AB
+ABC
+ABCD
+ABCDE
+'''
+x = 65
+for i in range(1,6):
+    for j in range(i):
+        print(chr(x+j),end="")
+    print()
